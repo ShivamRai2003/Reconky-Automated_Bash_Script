@@ -42,4 +42,4 @@ Reconky is a script written in bash to automate the task of recon and informatio
 - FortyNorth Security
 - Gordon Lyon
 
-`Note : Run with Caution `
+`Note : Run with Caution.Pull Request and New Ideas Is Welcome. `
