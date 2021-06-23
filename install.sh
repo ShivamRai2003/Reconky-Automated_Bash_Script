@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 #Author:Shivam-Rai
-#Date:18/06/2021
-#Install-Script
+#Description:Installation Script.Run this before reconky.sh to install the required requirments needed for the scripts...
 echo -e '.___                 __         .__  .__          __  .__               
 |   | ____   _______/  |______  |  | |  | _____ _/  |_|__| ____   ____  
 |   |/    \ /  ___/\   __\__  \ |  | |  | \__  \\   __\  |/  _ \ /    \ 
