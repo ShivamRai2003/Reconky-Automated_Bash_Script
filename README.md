@@ -33,6 +33,7 @@ Reconky is a script written in bash to automate the task of recon and informatio
 - Download the install script from https://github.com/ShivamRai2003/Reconky-Automated_Bash_Script/blob/main/reconky.sh
 
 # Authors and Thanks
+
 `This script makes use of tools developped by the following people`
 - Cyber Mentor 
 - Tom Hudson - Tomonomnom
@@ -42,4 +43,5 @@ Reconky is a script written in bash to automate the task of recon and informatio
 - FortyNorth Security
 - Gordon Lyon
 
-`Note : Run with Caution.Pull Request and New Ideas Is Welcome. `
+### Happy Hunting
+`Note : Run with Caution. Pull Request and New Ideas Is Welcome. `
