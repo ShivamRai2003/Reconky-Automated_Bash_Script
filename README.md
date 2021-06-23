@@ -1,4 +1,4 @@
-``## Reconky_automated_bash_script_for_Pentester_and_bug_bounty_hunters``
+## Reconky-Automated Bash Script
 
 ```---------	 _______  _______  _______  _______  _        _                
 (  ____ )(  ____ \(  ____ \(  ___  )( (    /|| \    /\|\     /|
