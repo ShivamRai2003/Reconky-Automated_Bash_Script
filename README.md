@@ -32,6 +32,9 @@ Reconky is a script written in bash to automate the task of recon and informatio
 # Installation & Requirements
 - Download the install script from https://github.com/ShivamRai2003/Reconky-Automated_Bash_Script/blob/main/reconky.sh
 
+# DEMO
+![cli output](https://github.com/ShivamRai2003/Reconky-Automated_Bash_Script/blob/main/Recon.gif)
+
 # Authors and Thanks
 
 `This script makes use of tools developped by the following people`
