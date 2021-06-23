@@ -78,9 +78,9 @@ echo
 sublist3r -d $target -v -t 100 -o $target/reconky/sublist3r/subdomains.txt
 cat $target/reconky/sublist3r/subdomains.txt | grep $1 >> $target/reconky/Subdomain_final.txt
 echo
-#amass enum -d $target -o $target/reconky/amass/subdomains2.txt
-#cat $target/reconky/amass/subdomains2.txt | grep $1 >> $target/reconky/Subdomain_final.txt
-#echo
+amass enum -d $target -o $target/reconky/amass/subdomains2.txt
+cat $target/reconky/amass/subdomains2.txt | grep $1 >> $target/reconky/Subdomain_final.txt
+echo
 knockpy $target >> $target/reconky/knockpy/subdomains3.txt 
 awk '/$target/ {print}' $target/reconky/knockpy/subdomains3.txt | cut -d " " -f 9 >> $target/reconky/Subdomain_final.txt
 echo
@@ -91,7 +91,7 @@ if [ ! -f "$target/reconky/Subdomain_Takeover/Subdomain_Takeover.txt" ];then
 fi
 subjack -w $target/reconky/Subdomain_final.txt -t 70 -timeout 25 -ssl -c /root/go/src/github.com/haccer/subjack/fingerprints.json -v 3 -o $target/reconky/Subdomain_Takeover/Subdomain_Takeover.txt
 echo
-#nmap -iL $target/reconky/httprobe/alivee.txt -T4 -oA $target/reconky/scans/scanned.txt
+nmap -iL $target/reconky/httprobe/alivee.txt -T4 -oA $target/reconky/scans/scanned.txt
 echo
 if [ ! -f "$target/reconky/wayback_urls/wayback_output.txt" ];then
 	touch $target/reconky/wayback_urls/wayback_output.txt
@@ -129,4 +129,4 @@ for i in $(cat $target/reconky/wayback_urls/wayback_output);do
 		rm $target/reconky/wayback_urls/extensions/aspx1.txt
 	fi
 done
-#eyewitness -f $target/reconky/httprobe/alivee.txt --web -d $target/reconky/eyewitness --resolve
+eyewitness -f $target/reconky/httprobe/alivee.txt --web -d $target/reconky/eyewitness --resolve
