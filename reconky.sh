@@ -60,17 +60,31 @@ fi
 if [ ! -f "$target/reconky/httprobe/alivee.txt" ];then
 	touch $target/reconky/httprobe/alivee.txt
 fi
-echo "Welcome to the Reconky Script-An Excellent Automation Script For Bug Bounty/Pentesting"
-echo "[+++] Gatherings subdomains with assetfinder and Sublist3r...[+++]"
-echo "[+++] Duplex checking for subdomains with amass...[+++]"
-echo "[+++] Enumerating subdomains on a target domain through dictionary attack...[+++]"
-echo "[+++] Searching for alive domains using Httprobe...[+++]"
-echo "[+++] Investigating for feasible subdomain takeover...[+++]"
-echo "[+++] Scanning for open ports using nmap...[+++]"
-echo "[+++] Pulling and Assembling all possible params found in wayback_url data...[+++]"
-echo "[+++] Pulling and compiling json/js/php/aspx/ files from wayback output...[+++]"
-echo "[+++] Running gowtiness(eyewitness) against all the compiled(alive) domains...[+++]"
-echo "[+++]Recon is in Progress Take A Cofee or Tea ;)[+++]"
+red=`tput setaf 1`
+green=`tput setaf 2`
+yellow=`tput setaf 3`
+echo
+echo ${yellow}"Welcome to the Reconky Script-An Excellent Automation Script For Bug Bounty/Pentesting"${yellow}
+echo
+echo ${red}"[+++] Gatherings subdomains with assetfinder and Sublist3r...[+++]"${red}
+echo
+echo ${red}"[+++] Duplex checking for subdomains with amass...[+++]"${red}
+echo
+echo ${red}"[+++] Enumerating subdomains on a target domain through dictionary attack...[+++]"${red}
+echo
+echo ${red}"[+++] Searching for alive domains using Httprobe...[+++]"${red}
+echo
+echo ${red}"[+++] Investigating for feasible subdomain takeover...[+++]"${red}
+echo
+echo ${green}"[+++] Scanning for open ports using nmap...[+++]"${green}
+echo
+echo ${green}"[+++] Pulling and Assembling all possible params found in wayback_url data...[+++]"${green}
+echo
+echo ${green}"[+++] Pulling and compiling json/js/php/aspx/ files from wayback output...[+++]"${green}
+echo
+echo ${green}"[+++] Running gowtiness(eyewitness) against all the compiled(alive) domains...[+++]"${green}
+echo
+echo ${yellow}"[+++]Recon is in Progress Take A Cofee or Tea ;)[+++]"${yellow}
 echo
 assetfinder $target >> $target/reconky/assetfinder/subdomains1.txt
 cat $target/reconky/assetfinder/subdomains1.txt | grep $1 >> $target/reconky/Subdomain_final.txt
