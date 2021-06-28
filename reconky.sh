@@ -115,7 +115,7 @@ sort -u $target/reconky/wayback_urls/wayback_output.txt
 cat $target/reconky/wayback_urls/wayback_output.txt | grep '?*=' | cut -d '=' -f 1 | sort -u >> $target/reconky/wayback_urls/params/params.txt
 for i in $(cat $target/reconky/wayback_urls/params/params.txt);do echo $i'=';done
 echo
-for i in $(cat $target/reconky/wayback_urls/wayback_output);do
+for i in $(cat $target/reconky/wayback_urls/wayback_output.txt);do
 	ext="${i##*.}"
 	if [[ "ext"=="php" ]];then
 		echo $i >> $target/reconky/wayback_urls/extensions/php1.txt
