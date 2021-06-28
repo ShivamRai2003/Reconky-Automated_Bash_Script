@@ -46,7 +46,7 @@ Reconky is a script written in bash to automate the task of recon and informatio
 - FortyNorth Security
 - Gordon Lyon
 
-`Note : this tool tested on the kali linux 2021.2 live image. If install.sh does not run kindly install all the tools manually described in that.So that directory problem will not occur.`
+`Note : this tool tested on the kali linux 2021.2 live image. If install.sh does not run kindly install all the tools manually described in that.So that directory problem will not occur and make sure all the tools can be run globally from any directory for that use symbolic link.`
 
 ### Happy Hunting
 `Note : Run with Caution. Pull Request and New Ideas Is Welcome. `
