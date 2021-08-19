@@ -48,7 +48,7 @@ if [ ! -d '$target/reconky/wayback_urls' ]; then
 fi
 if [ ! -d '$target/reconky/amass' ]; then
 	mkdir $target/reconky/amass
-	touch $target/reconky/assetfinder/subdomains2.txt
+	touch $target/reconky/amass/subdomains2.txt
 fi
 if [ ! -d '$target/reconky/witness' ]; then
 	mkdir $target/reconky/eyewitness
