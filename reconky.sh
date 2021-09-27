@@ -50,9 +50,6 @@ if [ ! -d '$target/reconky/amass' ]; then
 	mkdir $target/reconky/amass
 	touch $target/reconky/amass/subdomains2.txt
 fi
-if [ ! -d '$target/reconky/witness' ]; then
-	mkdir $target/reconky/eyewitness
-fi
 if [ ! -d '$target/reconky/knockpy' ]; then
 	mkdir $target/reconky/knockpy
 	touch $target/reconky/knockpy/subdomains3.txt
