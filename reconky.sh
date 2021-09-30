@@ -98,7 +98,7 @@ echo
 knockpy $target >> $target/reconky/knockpy/subdomains3.txt 
 awk '/$target/ {print}' $target/reconky/knockpy/subdomains3.txt | cut -d " " -f 9 >> $target/reconky/Subdomain_final.txt
 echo
-cat $target/reconky/Subdomain_final.txt | sort -u | httprobe | sed -E 's/^\s*.*:\/\///g' >> $target/reconky/httprobe/alivee.txt
+cat $target/reconky/Subdomain_final.txt | sort -u | httprobe | sed -E 's/^\s*.*:\/\///g' | sort -u >> $target/reconky/httprobe/alivee.txt
 echo
 if [ ! -f "$target/reconky/Subdomain_Takeover/Subdomain_Takeover.txt" ];then
 	touch $target/reconky/Subdomain_Takeover/Subdomain_Takeover.txt
