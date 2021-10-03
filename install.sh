@@ -84,6 +84,6 @@ if [ ! -e /usr/bin/knockpy ];then
         pip3 install -r requirements.txt
 	python3 setup.py install
 else
-	echo "Knockpy is already Installed"
+	echo "Knockpyty is already Installed"
 fi
 
