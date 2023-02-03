@@ -35,17 +35,6 @@ Reconky is a script written in bash to automate the task of recon and informatio
 # DEMO
 ![cli output](https://github.com/ShivamRai2003/Reconky-Automated_Bash_Script/blob/main/Recon.gif)
 
-# Authors and Thanks
-
-`This script makes use of tools developped by the following people`
-- Cyber Mentor 
-- Tom Hudson - Tomonomnom
-- OWASP
-- Ahmed Aboul-Ela - Aboul3la
-- Gianni Amato
-- FortyNorth Security
-- Gordon Lyon
-
 `Note : this tool tested on the kali linux 2021.2 live image. If install.sh does not run kindly install all the tools manually described in that.So that directory problem will not occur and make sure all the tools can be run globally from any directory for that use symbolic link.`
 
 ### Happy Hunting
